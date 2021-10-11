@@ -9,6 +9,7 @@ public class MyMapNode<K, V> {
         this.key = key;
         this.value = value;
         next = null;
+
     }
 
     public K getKey() {
@@ -39,9 +40,8 @@ public class MyMapNode<K, V> {
     public String toString() {
         StringBuilder nodeString = new StringBuilder();
         nodeString.append("Node{" + "Key=").append(key).append(" Value=").append(value).append("}");
-        if (next != null) {
+        if (next != null)
             nodeString.append("->").append(next);
-        }
         return nodeString.toString();
     }
 
